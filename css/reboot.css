@@ -39,7 +39,9 @@
   color: var(--primary-light) !important;
 }
 
-.link-primary {
+.link-primary,
+.link-primary:active,
+.link-primary:focus {
   color: var(--primary) !important;
 }
 
