@@ -35,6 +35,18 @@
   color: var(--primary) !important;
 }
 
+.text-primary-light {
+  color: var(--primary-light) !important;
+}
+
+.link-primary {
+  color: var(--primary) !important;
+}
+
+.link-primary:hover {
+  color: var(--primary-dark) !important;
+}
+
 .bg-primary {
   background-color: var(--primary) !important;
 }
