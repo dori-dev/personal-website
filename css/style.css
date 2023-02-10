@@ -15,3 +15,7 @@
     width: fit-content !important;
   }
 }
+
+.bg-primary-light {
+  background-color: #f7f0ff;
+}
