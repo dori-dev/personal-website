@@ -4,15 +4,148 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon//apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon//favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon//favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="imgs/favicon//apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imgs/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="imgs/favicon//favicon-16x16.png"
+    />
     <link rel="manifest" href="imgs/favicon//site.webmanifest" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/reboot.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Mohammad Dori</title>
   </head>
   <body>
-    <h1 class="btn btn-primary">Hello, world</h1>
+    <div class="bg-primary sticky-top shadow-primary">
+      <nav
+        class="navbar navbar-expand-lg bg-primary d-none d-lg-block container"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand w160px" href="">Mohammad Dori</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-end w160px" role="search">
+              <button class="btn btn-dark pt-1 pm-0">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <nav class="navbar navbar-dark bg-primary fixed-top d-lg-none sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mohammad Dori</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark bg-primary"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Mohammad Dori
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#home"
+                  data-bs-dismiss="offcanvas"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-dismiss="offcanvas"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-dismiss="offcanvas"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-dismiss="offcanvas"
+                  >Team</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-dismiss="offcanvas"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex mt-3" role="search">
+              <button
+                class="btn btn-dark pt-1 pm-0"
+                data-bs-dismiss="offcanvas"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
