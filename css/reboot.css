@@ -63,6 +63,17 @@
   border-color: var(--primary-lighter);
 }
 
+.accordion-button:not(.collapsed) {
+  color: var(--primary);
+  background-color: var(--primary-colorless);
+}
+
+.accordion-button:focus {
+  border: none;
+  outline: 0;
+  box-shadow: 0 0 0.2rem 0.1rem rgba(var(--primary-rgb), 0.5);
+}
+
 /* Custom */
 
 .darken-primary,
