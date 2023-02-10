@@ -5,3 +5,13 @@
 .shadow-primary {
   box-shadow: 0 0 10px 4px rgba(105, 6, 223, 0.3) !important;
 }
+
+.btn-block {
+  width: 100% !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-block {
+    width: fit-content !important;
+  }
+}
