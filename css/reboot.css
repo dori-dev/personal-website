@@ -1,36 +1,81 @@
+:root {
+  /* Primary */
+  --primary: #7a0dfd;
+  --primary-rgb: 122, 13, 253;
+  --primary-dark: #6102d4;
+  --primary-dark-rgb: 97, 2, 212;
+  --primary-deeper: #4a02a2;
+  --primary-light: #953ffd;
+  --primary-lighter: #b172fe;
+  --primary-colorless: #e9d7ff;
+}
+
+/* Primary */
+
 .btn-primary,
 .btn-primary:visited,
 .btn-primary:focus {
-  background-color: #7a0dfd;
-  border-color: #8c2cff;
+  background-color: var(--primary);
+  border-color: var(--primary-light);
 }
 
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:active:focus {
-  background-color: #5e13b9;
-  border-color: #6917ca;
+  background-color: var(--primary-dark);
+  border-color: var(--primary);
 }
 
 .btn-primary:active:focus,
-.btn-primary:focus {
-  box-shadow: 0 0 0.3rem 0.2rem rgba(199, 49, 253, 0.5);
+.btn-primary:focus-visible {
+  box-shadow: 0 0 0.2rem 0.1rem rgba(var(--primary-rgb), 0.5);
 }
 
 .text-primary {
-  color: #6906df !important;
+  color: var(--primary) !important;
 }
 
 .bg-primary {
-  background-color: #6906df !important;
+  background-color: var(--primary) !important;
 }
 
 .border-primary {
-  border-color: #6906df !important;
+  border-color: var(--primary) !important;
 }
 
 .alert-primary {
-  color: #5700c1;
-  background-color: #decfff;
-  border-color: #d5abff;
+  color: var(--primary);
+  background-color: var(--primary-colorless);
+  border-color: var(--primary-lighter);
+}
+
+/* Custom */
+
+.darken-primary,
+.darken-primary:visited,
+.darken-primary:focus {
+  background-color: var(--primary-dark);
+  border-color: var(--primary);
+}
+
+.darken-primary:hover,
+.darken-primary:active,
+.darken-primary:active:focus {
+  background-color: var(--primary-deeper);
+  border-color: var(--primary-dark);
+}
+
+.darken-primary:active:focus,
+.darken-primary:focus-visible {
+  box-shadow: 0 0 0.2rem 0.1rem rgba(var(--primary-dark-rgb), 0.5);
+}
+
+.navbar-toggler {
+  border: 1px solid rgb(255, 255, 255, 0.4);
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0.1rem 0.1rem rgb(255, 255, 255, 0.4);
 }
