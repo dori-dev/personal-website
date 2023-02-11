@@ -39,11 +39,10 @@ textarea {
   z-index: 10;
 }
 
-.nav-link {
-  color: #dedede;
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: #fefefe !important;
+.back-to-top {
+  width: 48px;
+  height: 48px;
+  right: 10px;
+  bottom: 10px;
+  z-index: 10;
 }

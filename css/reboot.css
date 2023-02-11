@@ -118,3 +118,12 @@ a {
   box-shadow: 0 0 0.2rem 0.01rem rgba(var(--primary-rgb), 0.5);
   border: 1px solid var(--primary);
 }
+
+.nav-link {
+  color: #dedede;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fefefe !important;
+}
