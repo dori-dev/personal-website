@@ -32,6 +32,7 @@
   <body>
     <!-- Alert -->
     <div class="" id="liveAlertPlaceholder"></div>
+    <!-- ‌Back To Top -->
     <!-- Navbar -->
     <div class="bg-primary sticky-top shadow-primary">
       <nav
@@ -39,7 +40,10 @@
         data-bs-theme="dark"
       >
         <div class="container-fluid">
-          <a class="navbar-brand w200px d-flex align-items-center me-0" href="">
+          <a
+            class="navbar-brand w200px d-flex align-items-center me-0"
+            href="#top"
+          >
             <img
               src="imgs/logo.svg"
               alt="Logo"
@@ -63,21 +67,19 @@
           <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home"
-                  >Home</a
-                >
+                <a class="nav-link" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#features">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
+                <a class="nav-link" href="#team">Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">QA</a>
+                <a class="nav-link" href="#qa">QA</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
             <div class="d-flex justify-content-end w200px" role="search">
@@ -96,7 +98,7 @@
     </div>
     <nav class="navbar navbar-dark bg-primary fixed-top d-lg-none sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="">
+        <a class="navbar-brand d-flex align-items-center" href="#top">
           <img
             src="imgs/logo.svg"
             alt="Logo"
@@ -133,42 +135,31 @@
             ></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="#home"
-                  data-bs-dismiss="offcanvas"
-                  >Home</a
-                >
+            <ul
+              class="navbar-nav nav-mobile justify-content-end flex-grow-1 pe-3"
+            >
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#home">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-bs-dismiss="offcanvas"
-                  >Features</a
-                >
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#features">Features</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-bs-dismiss="offcanvas"
-                  >Team</a
-                >
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#team">Team</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-bs-dismiss="offcanvas">QA</a>
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#qa">QA</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-bs-dismiss="offcanvas"
-                  >Contact</a
-                >
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
-            <div class="d-flex mt-3" role="search">
+            <div class="d-flex mt-3" role="search" data-bs-dismiss="offcanvas">
               <button
                 type="button"
                 class="btn btn-primary darken-primary pt-1 pm-0"
                 data-bs-toggle="modal"
                 data-bs-target="#getStartedModal"
-                data-bs-dismiss="offcanvas"
               >
                 Get Started
               </button>
@@ -566,7 +557,7 @@
       </div>
     </section>
     <!-- My Team -->
-    <section class="py-4">
+    <section class="py-4" id="team">
       <div class="container">
         <h2 class="display-6 text-center mt-5 mb-3">My Team</h2>
         <p class="text-center lead text-muted mb-5">
@@ -824,7 +815,7 @@
       </div>
     </section>
     <!-- Q&A -->
-    <section class="py-4 bg-primary-light" id="features">
+    <section class="py-4 bg-primary-light" id="qa">
       <div class="container">
         <h2 class="display-6 text-center mt-5 mb-3">Question and Answer</h2>
         <p class="text-center lead text-muted mb-5">
@@ -953,7 +944,7 @@
       </div>
     </section>
     <!-- Contact -->
-    <section class="py-4">
+    <section class="py-4" id="contact">
       <div class="container">
         <h2 class="display-6 text-center mt-5 mb-3">Contact</h2>
         <p class="text-center lead text-muted mb-5">
@@ -1213,7 +1204,9 @@
         </div>
       </div>
     </footer>
+    <!-- Scripts -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
   </body>
 </html>
