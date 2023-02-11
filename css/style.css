@@ -19,3 +19,14 @@
 .bg-primary-light {
   background-color: #f7f0ff;
 }
+
+textarea {
+  resize: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .col-xxs-12 {
+    flex: 0 0 auto;
+    width: 100% !important;
+  }
+}

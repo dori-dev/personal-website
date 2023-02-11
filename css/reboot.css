@@ -108,3 +108,13 @@
 a {
   text-decoration: none;
 }
+
+*::selection {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0.2rem 0.01rem rgba(var(--primary-rgb), 0.5);
+  border: 1px solid var(--primary);
+}
