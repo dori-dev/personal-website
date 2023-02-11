@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "vazir-bold";
+  src: url("../fonts/vazir-bold.woff2") format("woff2");
+}
+
+body {
+  font-family: "vazir";
+  direction: rtl;
+  text-align: right;
+}
+
+.bold-font,
+b {
+  font-family: "vazir-bold";
+}
+
+.rtl {
+  direction: rtl !important;
+}

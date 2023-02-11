@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="imgs/favicon//apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imgs/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="imgs/favicon//favicon-16x16.png"
+    />
+    <!-- Styles -->
+    <link rel="manifest" href="imgs/favicon//site.webmanifest" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/reboot.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/rtl.css" />
+    <title>محمد دری</title>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-offset="0"
+    data-bs-smooth-scroll="true"
+    tabindex="0"
+  >
+    <!-- Alert -->
+    <div class="" id="liveAlertPlaceholder"></div>
+    <!-- ‌Back To Top -->
+    <div>
+      <button
+        onclick="backToTop()"
+        class="btn btn-primary text-white d-flex justify-content-center align-items-center rounded-circle back-to-top position-fixed"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="36"
+          fill="currentColor"
+          class="bi bi-arrow-up"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Navbar -->
+    <div class="bg-primary sticky-top shadow-primary">
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-lg bg-primary d-none d-lg-block container"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a
+            onclick="backToTop()"
+            class="navbar-brand w200px d-flex align-items-center me-0 bold-font"
+          >
+            <img
+              src="imgs/logo.svg"
+              alt="Logo"
+              width="30"
+              height="30"
+              class="d-inline-block align-text-top me-2"
+            />
+            محمد دری
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">خانه</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">امکانات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">تیم</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#qa">سوالات متداول</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">تماس با ما</a>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-end w200px" role="search">
+              <button
+                type="button"
+                class="btn btn-primary darken-primary pt-1 pm-0"
+                data-bs-toggle="modal"
+                data-bs-target="#getStartedModal"
+              >
+                سفارش پروژه
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <nav
+      id="navbarMobile"
+      class="navbar navbar-dark bg-primary fixed-top d-lg-none sticky-top"
+    >
+      <div class="container-fluid">
+        <a onclick="backToTop()" class="navbar-brand d-flex align-items-center">
+          <img
+            src="imgs/logo.svg"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top me-2 bold-font"
+          />
+          محمد دری
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark bg-primary"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              محمد دری
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav justify-content-end flex-grow-1 pe-3"
+              role="tablist"
+            >
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#home">خانه</a>
+              </li>
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#features">امکانات</a>
+              </li>
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#team">تیم</a>
+              </li>
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#qa">سوالات متداول</a>
+              </li>
+              <li class="nav-item" data-bs-dismiss="offcanvas">
+                <a class="nav-link" href="#contact">تماس با ما</a>
+              </li>
+            </ul>
+            <div class="d-flex mt-3" data-bs-dismiss="offcanvas">
+              <button
+                type="button"
+                class="btn btn-primary darken-primary pt-1 pm-0"
+                data-bs-toggle="modal"
+                data-bs-target="#getStartedModal"
+              >
+                سفارش پروژه
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="getStartedModal"
+      tabindex="-1"
+      aria-labelledby="getStartedModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="getStartedModalLabel">
+              سفارش پروژه
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="py-2 w-100" method="post">
+              <div class="mb-4">
+                <label for="projectType" class="form-label mb-1">نوع</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="projectType"
+                  placeholder="سایت فروشگاهی..."
+                />
+              </div>
+              <div class="mb-4">
+                <label for="phoneNumber" class="form-label mb-1">تلفن</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="phoneNumber"
+                  placeholder="0913-335-2042"
+                />
+              </div>
+              <div>
+                <label for="projectDescription" class="form-label mb-1"
+                  >درباره پروژه</label
+                >
+                <textarea
+                  class="form-control"
+                  id="projectDescription"
+                  rows="4"
+                  placeholder="توضیحات تکمیلی..."
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer btn-group">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              id="liveAlertBtn"
+            >
+              سفارش
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              لغو
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content -->
+    <main
+      data-bs-spy="scroll"
+      data-bs-target="#navbarMobile"
+      data-bs-offset="0"
+      data-bs-smooth-scroll="true"
+      tabindex="0"
+    >
+      <!-- Header -->
+      <header class="py-4" id="home">
+        <div class="container">
+          <div class="row align-items-center my-5">
+            <div class="col-md-6 text-center text-md-start mb-5 mb-md-0">
+              <h2 class="display-5 mb-4">
+                سایت های <span class="text-primary">مدرن</span> را به سرعت می
+                سازیم!
+              </h2>
+              <p class="lead mb-4">
+                من
+                <a
+                  target="_blank"
+                  class="link-primary"
+                  href="https://github.com/dori-dev"
+                  >محمد دری</a
+                >
+                توسعه دهنده ای هستم که
+                <b>پروژه های</b>
+                شما را در سریع ترین زمان و با بهترین خروجی می سازم.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary darken-primary pt-1 pm-0 btn-block"
+                data-bs-toggle="modal"
+                data-bs-target="#getStartedModal"
+              >
+                سفارش پروژه
+              </button>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="imgs/header.svg"
+                alt="Mohammad Dori Web Developer"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Features -->
+      <section class="py-4 bg-primary-light" id="features">
+        <div class="container">
+          <h2 class="display-6 text-center mt-5 mb-3">امکانات</h2>
+          <p class="text-center lead text-muted mb-5">
+            تیم ما از بروز ترین تکنولوژی های روز نرم افزار برای تولید وب سایت
+            استفاده می کند. تیم ما بهترین خدمات رو به شما ارائه می دهد. تمامی
+            پروژه های ما دارای پشتیبانی یک ساله هستند. ما کیفیت رو به شما تضمین
+            میکنیم. وب سایت هایی که ما میسازیم دارای بهترین عملکرد و ظاهر فوق
+            العاده همراه با سئوی کامل هستند. این اطمینان رو به شما میدهم که
+            کاربران تون بهترین تجربه رو در سایت شما خواهند داشت!
+          </p>
+          <div class="row g-4 pb-5">
+            <div class="col-xl-4 col-md-6">
+              <div class="card p-4 h-100">
+                <div class="card-body text-center">
+                  <svg
+                    class="text-primary mb-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="56"
+                    height="56"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"
+                    ></path>
+                  </svg>
+                  <h4 class="card-title mb-3">سرعت</h4>
+                  <p class="card-text lead text-muted">
+                    سایت های که تیم محمد دری می سازند از بهترین عملکرد
+                    برخوردارند. سرعت سایت شما برای ما اهمیت بالایی دارد.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="card p-4 h-100">
+                <div class="card-body text-center">
+                  <svg
+                    class="text-primary mb-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="56"
+                    height="56"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"
+                    ></path>
+                  </svg>
+                  <h4 class="card-title mb-3">رشد</h4>
+                  <p class="card-text lead text-muted">
+                    شاهد رشد فوق العاده کاربران و مشتریان خود باشید. می توانید
+                    از پنل ادمین فعالیت کاربران خود را رصد کنید.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="card p-4 h-100">
+                <div class="card-body text-center">
+                  <svg
+                    class="text-primary mb-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="56"
+                    height="56"
+                    fill="currentColor"
+                    viewBox="0 0 384 512"
+                  >
+                    <path
+                      d="M288 0H96C60.65 0 32 28.65 32 64v384c0 35.35 28.65 64 64 64h192c35.35 0 64-28.65 64-64V64C352 28.65 323.3 0 288 0zM320 448c0 17.64-14.36 32-32 32H96c-17.64 0-32-14.36-32-32V64c0-17.64 14.36-32 32-32h192c17.64 0 32 14.36 32 32V448zM224 400H160c-8.836 0-16 7.162-16 16c0 8.836 7.164 16 16 16h64c8.836 0 16-7.164 16-16C240 407.2 232.8 400 224 400z"
+                    ></path>
+                  </svg>
+                  <h4 class="card-title mb-3">ریسپانسیو</h4>
+                  <p class="card-text lead text-muted">
+                    سایت هایی که ما طراحی میکنیم واکنش گرا بوده و در موبایل،
+                    تبلت، لپ تاپ، کامپیوتر و آیپد به خوبی نمایش داده می شوند.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="card p-4 h-100">
+                <div class="card-body text-center">
+                  <svg
+                    class="text-primary mb-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="56"
+                    height="56"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4V2.667z"
+                    ></path>
+                    <path
+                      d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.51 6.51 0 0 1-1.458.79C11.81 7.684 9.967 8 8 8c-1.966 0-3.809-.317-5.208-.876a6.508 6.508 0 0 1-1.458-.79z"
+                    ></path>
+                    <path
+                      d="M14.667 11.668a6.51 6.51 0 0 1-1.458.789c-1.4.56-3.242.876-5.21.876-1.966 0-3.809-.316-5.208-.876a6.51 6.51 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667v-1.665z"
+                    ></path>
+                  </svg>
+                  <h4 class="card-title mb-3">دیتابیس</h4>
+                  <p class="card-text lead text-muted">
+                    شما میتوانید به طور مداوم از پایگاه داده سایت خود پشتیبانی
+                    بگیرید تا در صورت بروز مشکل از فایل های بک آپ استفاده کنید.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="card p-4 h-100">
+                <div class="card-body text-center">
+                  <svg
+                    class="text-primary mb-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="56"
+                    height="56"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z"
+                    ></path>
+                    <path
+                      d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"
+                    ></path>
+                  </svg>
+                  <h4 class="card-title mb-3">سرور</h4>
+                  <p class="card-text lead text-muted">
+                    ما سایت شما رو در بهترین سرور ها دیپلوی خواهیم کرد تا با
+                    افزایش کاربران تون سایت دچار مشکل فنی نشود.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="card p-4 h-100">
+                <div class="card-body text-center">
+                  <svg
+                    class="text-primary mb-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="56"
+                    height="56"
+                    fill="currentColor"
+                    viewBox="0 0 640 512"
+                  >
+                    <path
+                      d="M372.7 299.3C375.8 302.4 379.9 304 384 304s8.188-1.562 11.31-4.688l64-64c6.25-6.25 6.25-16.38 0-22.62l-64-64c-6.25-6.25-16.38-6.25-22.62 0s-6.25 16.38 0 22.62L425.4 224l-52.69 52.69C366.4 282.9 366.4 293.1 372.7 299.3zM267.3 148.7c-6.25-6.25-16.38-6.25-22.62 0l-64 64c-6.25 6.25-6.25 16.38 0 22.62l64 64C247.8 302.4 251.9 304 256 304s8.188-1.562 11.31-4.688c6.25-6.25 6.25-16.38 0-22.62L214.6 224l52.69-52.69C273.6 165.1 273.6 154.9 267.3 148.7zM80 352C88.84 352 96 344.8 96 336V96c0-17.66 14.36-32 32-32h384c17.64 0 32 14.34 32 32v240c0 8.844 7.156 16 16 16s16-7.156 16-16V96c0-35.28-28.7-64-64-64H128C92.7 32 64 60.72 64 96v240C64 344.8 71.16 352 80 352zM624 384h-608C7.25 384 0 391.3 0 400V416c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.3 632.8 384 624 384zM576 448H64c-17.64 0-32-14.36-32-32h576C608 433.6 593.6 448 576 448z"
+                    ></path>
+                  </svg>
+                  <h4 class="card-title mb-3">کد</h4>
+                  <p class="card-text lead text-muted">
+                    ما کد های پروژه رو در اختیار شما می گذاریم. پروژه های ما با
+                    پیروی از clean architecture و clean code دارای ساختار و کد
+                    های تمیز و مقیاس پذیر هست.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Django -->
+      <section class="py-4">
+        <div class="container">
+          <div class="row align-items-center my-5 gx-5">
+            <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
+              <h2 class="display-5 mb-4">
+                ما از <span class="text-primary">جنگو</span> برای بک اند استفاده
+                می کنیم!
+              </h2>
+              <p class="lead mb-2">
+                <b>جنگو</b>
+                یک فریمورک سطح بالای پایتون است. جنگو به طرز مطمئنی
+                <b>امن</b>
+                و بسیار
+                <b>مقیاس پذیر</b>
+                است.
+              </p>
+              <p class="lead">
+                از سایت های <b>ساخته شده</b> با جنگو می توان به
+                <a
+                  target="_blank"
+                  class="link-primary"
+                  href="https://www.instagram.com/"
+                  >اینستاگرام</a
+                >،
+                <a
+                  target="_blank"
+                  class="link-primary"
+                  href="https://www.youtube.com/"
+                  >یوتیوب</a
+                >،
+                <a
+                  target="_blank"
+                  class="link-primary"
+                  href="https://www.pinterest.com/"
+                  >پینترست</a
+                >،
+                <a
+                  target="_blank"
+                  class="link-primary"
+                  href="https://www.spotify.com/"
+                  >اسپاتیفای</a
+                >،
+                <a
+                  target="_blank"
+                  class="link-primary"
+                  href="https://www.mozilla.org/"
+                  >موزیلا</a
+                >،
+                <a
+                  target="_blank"
+                  class="link-primary"
+                  href="https://disqus.com/"
+                  >دیسکوس</a
+                >،
+                <a
+                  target="_blank"
+                  class="link-primary"
+                  href="https://bitbucket.org/"
+                  >بیت باکت</a
+                >،
+                <a
+                  target="_blank"
+                  class="link-primary"
+                  href="https://www.dropbox.com/"
+                  >دراپ باکس</a
+                >
+                و
+                <a
+                  target="_blank"
+                  class="link-primary"
+                  href="https://www.washingtonpost.com/"
+                  >واشنگتن پست</a
+                >
+                اشاره کرد.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="imgs/django.svg"
+                alt="Mohammad Dori Web Developer"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- React -->
+      <section class="py-4 bg-dark text-light">
+        <div class="container">
+          <div class="row align-items-center my-5 gx-5">
+            <div class="col-lg-6">
+              <img
+                src="imgs/react.svg"
+                alt="Mohammad Dori Web Developer"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-6 text-center text-lg-start mt-5 mt-lg-0">
+              <h2 class="display-5 mb-4">
+                ما از <span class="text-primary-light">ری اکت</span> برای فرانت
+                اند استفاده می کنیم!
+              </h2>
+              <p class="lead mb-2">
+                <b>ری اکت</b>
+                یک کتابخانه جاوا اسکریپت برای ساخت رابط کاربری است. ری اکت یک
+                کتابخانه جاوا اسکریپت
+                <b>سریع</b>، <b>کارآمد</b> و
+                <b>منعطف</b>
+                برای ساخت رابط کاربری است.
+              </p>
+              <p class="lead">
+                امروزه توسط <b>شرکت های بزرگ</b> و استارتاپ های
+                <b>تازه تاسیس</b> استفاده می شود. ری اکت توسط <b>Meta</b> و
+                جامعه ای از توسعه دهندگان و شرکت ها نگهداری می شود.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- My Team -->
+      <section class="py-4" id="team">
+        <div class="container">
+          <h2 class="display-6 text-center mt-5 mb-3">تیم من</h2>
+          <p class="text-center lead text-muted mb-5">
+            تمام اعضای تیم ام دوستای دوران دانشگاهم هستند. توی دانشگاه سعی کردم
+            کسانی که با من هم هدف هستند رو پیدا کنم و یه تیم تشکیل بدم. همونطور
+            که میبینی ما یه تیم کامل ایم که هر کدوم وظایف مختلفی در ساخت و تکمیل
+            پروژه داریم.
+          </p>
+          <div class="row g-4 pb-5">
+            <div class="col-lg-3 col-6 text-center">
+              <img
+                src="imgs/team1.jpg"
+                alt=""
+                class="img-fluid rounded-circle img-thumbnail mb-4 w-75"
+              />
+              <h2 class="fs-4 mb-1">محمد</h2>
+              <p class="text-muted mb-3">مؤسس</p>
+              <ul
+                class="list-unstyled d-flex justify-content-center align-items-center"
+              >
+                <li class="mx-1">
+                  <a target="_blank" href="" class="link-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telegram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mx-1">
+                  <a target="_blank" href="" class="link-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-github"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="mx-1">
+                  <a target="_blank" href="" class="link-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telegram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+              <img
+                src="imgs/team2.jpg"
+                alt=""
+                class="img-fluid rounded-circle img-thumbnail mb-4 w-75"
+              />
+              <h2 class="fs-4 mb-1">امیر علی</h2>
+              <p class="text-muted mb-3">توسعه دهنده بکند</p>
+              <ul
+                class="list-unstyled d-flex justify-content-center align-items-center"
+              >
+                <li class="mx-1">
+                  <a target="_blank" href="" class="link-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telegram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mx-1">
+                  <a target="_blank" href="" class="link-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-github"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="mx-1">
+                  <a target="_blank" href="" class="link-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telegram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+              <img
+                src="imgs/team3.jpg"
+                alt=""
+                class="img-fluid rounded-circle img-thumbnail mb-4 w-75"
+              />
+              <h2 class="fs-4 mb-1">مینا</h2>
+              <p class="text-muted mb-3">توسعه دهنده فرانت</p>
+              <ul
+                class="list-unstyled d-flex justify-content-center align-items-center"
+              >
+                <li class="mx-1">
+                  <a target="_blank" href="" class="link-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telegram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mx-1">
+                  <a target="_blank" href="" class="link-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-github"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="mx-1">
+                  <a target="_blank" href="" class="link-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telegram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+              <img
+                src="imgs/team4.jpg"
+                alt=""
+                class="img-fluid rounded-circle img-thumbnail mb-4 w-75"
+              />
+              <h2 class="fs-4 mb-1">مهران</h2>
+              <p class="text-muted mb-3">طراح UI</p>
+              <ul
+                class="list-unstyled d-flex justify-content-center align-items-center"
+              >
+                <li class="mx-1">
+                  <a target="_blank" href="" class="link-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telegram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mx-1">
+                  <a target="_blank" href="" class="link-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-github"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="mx-1">
+                  <a target="_blank" href="" class="link-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telegram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Q&A -->
+      <section class="py-4 bg-primary-light" id="qa">
+        <div class="container">
+          <h2 class="display-6 text-center mt-5 mb-3">سوالات متداول</h2>
+          <p class="text-center lead text-muted mb-5"></p>
+          <div class="accordion mb-5" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  مراحل طراحی سایت چیست؟
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  در شرکت ما طراحی سایت با تحلیل نیازهای مشتری آغاز می شود. پس
+                  از تجزیه و تحلیل سایت، قرارداد بر اساس زمان بندی و نیازسنجی
+                  منعقد می شود. پس از عقد قرارداد، نیاز ها مستند شده و پروژه
+                  وارد مرحله اجرا می شود. این فرآیند پس از اجرا رفع اشکال می شود
+                  و پس از نتیجه تحلیل و نیاز پروژه، سایت آماده تحویل و آموزش می
+                  باشد.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  طراحی سایت چقدر طول می کشد؟
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  زمان کلی طراحی و ساخت سایت بسته به ویژگی های سایت متفاوت است.
+                  اگر سایت به طور خاص طراحی شود و از فناوری های پیشرفته و پیچیده
+                  استفاده شود، زمان طراحی و ساخت افزایش می یابد. زمان طراحی
+                  بستگی به نوع وب سایت دارد. به طور کلی سایت های شخصی و شرکتی
+                  نسبت به سایت های فروشگاهی به زمان کمتری نیاز دارند.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  پشتیبانی ما از سایتی که ساخته ایم چگونه است؟
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  در شرکت ما پروژه ها شامل یک سال گارانتی و پشتیبانی رایگان می
+                  باشد. این گارانتی شامل رفع عیوب احتمالی پروژه است. هزینه تمدید
+                  سرویس پشتیبانی سایت 20 درصد هزینه اجرای پروژه هست.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  قیمت طراحی سایت چقدر است؟
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  طراحی سایت یک فرآیند کاملا سفارشی برای شماست. همانطور که شما
+                  قیمت خاصی برای ارائه خدمات سفارشی به مشتریان خود ندارید تا
+                  نیازهای آنها را بدانید، ما نیز باید انتظارات شما را بشنویم،
+                  بخوانیم یا تجزیه و تحلیل کنیم تا بتوانیم زمان و هزینه مناسب را
+                  به شما ارائه دهیم.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="py-4" id="contact">
+        <div class="container">
+          <h2 class="display-6 text-center mt-5 mb-3">تماس با ما</h2>
+          <p class="text-center lead text-muted mb-5"></p>
+          <div class="row my-5 gx-4">
+            <div class="col-lg-6 order-1 order-lg-0">
+              <div class="row g-4">
+                <div class="col-6 col-xxs-12">
+                  <div class="bg-primary-light rounded p-3 h-100">
+                    <svg
+                      class="text-primary mb-sm-5 mb-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="46"
+                      height="46"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+                      ></path>
+                      <path
+                        d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                      ></path>
+                    </svg>
+                    <h4>آدرس</h4>
+                    <div class="text-muted small">تهران، پارک کارآفرینی</div>
+                    <div class="text-muted small">ساختمان ۱۲ طبقه سوم</div>
+                  </div>
+                </div>
+                <div class="col-6 col-xxs-12">
+                  <div class="bg-primary-light rounded p-3 h-100">
+                    <svg
+                      class="text-primary mb-sm-5 mb-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="46"
+                      height="46"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                      ></path>
+                    </svg>
+                    <h4>تلفن</h4>
+                    <div class="text-muted small">0913-335-2042</div>
+                    <div class="text-muted small">0901-312-8010</div>
+                  </div>
+                </div>
+                <div class="col-6 col-xxs-12">
+                  <div class="bg-primary-light rounded p-3 h-100">
+                    <svg
+                      class="text-primary mb-sm-5 mb-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="46"
+                      height="46"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
+                      ></path>
+                    </svg>
+                    <h4>ایمیل</h4>
+                    <div class="text-muted small">mr.dori.dev@gmail.com</div>
+                    <div class="text-muted small">info@dori.com</div>
+                  </div>
+                </div>
+                <div class="col-6 col-xxs-12">
+                  <div class="bg-primary-light rounded p-3 h-100">
+                    <svg
+                      class="text-primary mb-sm-5 mb-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="46"
+                      height="46"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"
+                      ></path>
+                      <path
+                        d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"
+                      ></path>
+                      <path
+                        d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"
+                      ></path>
+                    </svg>
+                    <h4>ساعات</h4>
+                    <div class="text-muted small">شنبه - جمعه</div>
+                    <div class="text-muted small">۹ صبح - ۵ عصر</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-0 order-lg-1 mb-5 mb-lg-0">
+              <form
+                action=""
+                class="bg-primary-light py-4 w-100 px-3 h-100 d-flex flex-column justify-content-center rounded"
+                method="post"
+              >
+                <div class="mb-4">
+                  <label for="contactName" class="form-label mb-1">نام</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactName"
+                    placeholder="محمد دری..."
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="contactEmail" class="form-label mb-1"
+                    >ایمیل</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="contactEmail"
+                    placeholder="mr.dori.dev@gmail.com"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="contactMessage" class="form-label mb-1"
+                    >پیام</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="contactMessage"
+                    rows="4"
+                    placeholder="پیام شما..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  ارسال
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="py-4 bg-primary-light">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-4 text-center mb-4">
+            <h3 class="mb-2">محمد دری</h3>
+            <p class="lead">
+              تیم من پروژه های شما را در سریع ترین زمان و با بهترین خروجی خواهد
+              ساخت.
+            </p>
+          </div>
+          <div class="col-md-8 row">
+            <div class="col-6 text-center mb-4 d-flex justify-content-center">
+              <div>
+                <h3 class="mb-2">پروژه ها</h3>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      target="_blank"
+                      class="link-primary"
+                      href="https://github.com/dori-dev/news-reader"
+                      >خبرخوان</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="link-primary"
+                      href="https://github.com/dori-dev/django-chat"
+                      >پیامرسان</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="link-primary"
+                      href="https://github.com/dori-dev/social-network"
+                      >شبکه اجتماعی</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="link-primary"
+                      href="https://github.com/dori-dev/weblog"
+                      >وبلاگ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="link-primary"
+                      href="https://github.com/dori-dev/odkolon-store"
+                      >فروشگاه ادکلن</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 text-center mb-4 d-flex justify-content-center">
+              <div>
+                <h3 class="mb-2">ارتباط</h3>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      target="_blank"
+                      class="link-primary"
+                      href="https://www.youtube.com/channel/UC8PIMbjxztHeiBWZRpblp2A"
+                      >یوتیوب</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="link-primary"
+                      href="https://www.instagram.com/mr.dori.dev/"
+                      >اینستاگرام</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="link-primary"
+                      href="http://t.me/DoriDev"
+                      >تلگرام</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="link-primary"
+                      href="https://www.aparat.com/dori.dev"
+                      >آپارات</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="link-primary"
+                      href="https://virgool.io/@dori-dev"
+                      >ویرگول</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr class="text-primary" />
+          <p class="text-center mt-4">
+            طراحی و توسعه
+            <a
+              target="_blank"
+              class="link-primary"
+              href="https://github.com/dori-dev"
+              >محمد دری</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
