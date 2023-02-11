@@ -30,6 +30,8 @@
     <title>Mohammad Dori</title>
   </head>
   <body>
+    <!-- Alert -->
+    <div class="" id="liveAlertPlaceholder"></div>
     <!-- Navbar -->
     <div class="bg-primary sticky-top shadow-primary">
       <nav
@@ -79,7 +81,12 @@
               </li>
             </ul>
             <div class="d-flex justify-content-end w200px" role="search">
-              <button class="btn btn-primary darken-primary pt-1 pm-0">
+              <button
+                type="button"
+                class="btn btn-primary darken-primary pt-1 pm-0"
+                data-bs-toggle="modal"
+                data-bs-target="#getStartedModal"
+              >
                 Get Started
               </button>
             </div>
@@ -157,7 +164,10 @@
             </ul>
             <div class="d-flex mt-3" role="search">
               <button
+                type="button"
                 class="btn btn-primary darken-primary pt-1 pm-0"
+                data-bs-toggle="modal"
+                data-bs-target="#getStartedModal"
                 data-bs-dismiss="offcanvas"
               >
                 Get Started
@@ -167,6 +177,80 @@
         </div>
       </div>
     </nav>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="getStartedModal"
+      tabindex="-1"
+      aria-labelledby="getStartedModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="getStartedModalLabel">
+              Project Order
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="py-2 w-100" method="post">
+              <div class="mb-4">
+                <label for="projectType" class="form-label mb-1">Type</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="projectType"
+                  placeholder="Store website..."
+                />
+              </div>
+              <div class="mb-4">
+                <label for="phoneNumber" class="form-label mb-1">Phone</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="phoneNumber"
+                  placeholder="0913-335-2042"
+                />
+              </div>
+              <div>
+                <label for="projectDescription" class="form-label mb-1"
+                  >About</label
+                >
+                <textarea
+                  class="form-control"
+                  id="projectDescription"
+                  rows="4"
+                  placeholder="Description of project..."
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer btn-group">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              id="liveAlertBtn"
+            >
+              Order Project
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Header -->
     <header class="py-4" id="home">
       <div class="container">
@@ -186,7 +270,12 @@
               a developer who will build your <b>projects</b> in the fastest
               time and with the best output.
             </p>
-            <button class="btn btn-primary darken-primary pt-1 pm-0 btn-block">
+            <button
+              type="button"
+              class="btn btn-primary darken-primary pt-1 pm-0 btn-block"
+              data-bs-toggle="modal"
+              data-bs-target="#getStartedModal"
+            >
               Get Started
             </button>
           </div>
@@ -913,8 +1002,8 @@
                     ></path>
                   </svg>
                   <h4>Phone</h4>
-                  <div class="text-muted small">+1 5589 55488 55</div>
-                  <div class="text-muted small">+1 6678 254445 41</div>
+                  <div class="text-muted small">+98 913-335-2042</div>
+                  <div class="text-muted small">+98 901-312-8010</div>
                 </div>
               </div>
               <div class="col-6 col-xxs-12">
@@ -932,8 +1021,8 @@
                     ></path>
                   </svg>
                   <h4>Email</h4>
-                  <div class="text-muted small">info@example.com</div>
-                  <div class="text-muted small">contact@example.com</div>
+                  <div class="text-muted small">mr.dori.dev@gmail.com</div>
+                  <div class="text-muted small">info@dori.com</div>
                 </div>
               </div>
               <div class="col-6 col-xxs-12">
@@ -1125,5 +1214,6 @@
       </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

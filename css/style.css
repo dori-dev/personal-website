@@ -30,3 +30,11 @@ textarea {
     width: 100% !important;
   }
 }
+
+.alert-fixed {
+  position: fixed;
+  top: 80px;
+  left: 2%;
+  max-width: 80%;
+  z-index: 10;
+}

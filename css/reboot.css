@@ -58,13 +58,13 @@
 }
 
 .alert-primary {
-  color: var(--primary);
+  color: var(--primary-dark);
   background-color: var(--primary-colorless);
   border-color: var(--primary-lighter);
 }
 
 .accordion-button:not(.collapsed) {
-  color: var(--primary);
+  color: var(--primary-dark);
   background-color: var(--primary-colorless);
 }
 
