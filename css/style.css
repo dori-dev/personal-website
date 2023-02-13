@@ -4,8 +4,13 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
+
+* {
+  overflow-x: hidden !important;
+}
+
 
 @media (min-width: 992px) {
   .w200px {
