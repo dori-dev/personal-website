@@ -5,10 +5,12 @@
 
 body {
   overflow-x: hidden !important;
+  overflow-y: unset !important;
 }
 
 * {
   overflow-x: hidden !important;
+  overflow-y: unset !important;
 }
 
 
