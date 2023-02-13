@@ -5,14 +5,22 @@
 
 body {
   overflow-x: hidden !important;
-  overflow-y: unset !important;
+  overflow-y: scroll !important;
 }
 
-* {
+h1,
+h2,
+h3,
+h4,
+p,
+div {
   overflow-x: hidden !important;
-  overflow-y: unset !important;
+  overflow-y: hidden;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
 
 @media (min-width: 992px) {
   .w200px {
