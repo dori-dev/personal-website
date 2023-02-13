@@ -3,8 +3,14 @@
   src: url("../fonts/vazir.woff2") format("woff2");
 }
 
-.w200px {
-  width: 200px;
+body {
+  overflow-x: hidden;
+}
+
+@media (min-width: 992px) {
+  .w200px {
+    width: 200px;
+  }
 }
 
 .shadow-primary {
